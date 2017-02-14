@@ -1,0 +1,162 @@
+*{
+    padding:0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    width:100%;
+    height:100%;
+}
+nav{
+    font-size: 1.5rem;
+    color: #222;
+    height: 3rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 3rem;
+    background: #ccc;
+}
+nav .tip{
+    float: left;
+    margin-left: 5vw;
+}
+nav .txt{
+    float: right;
+    margin-right: 5vw;
+}
+nav .txt a{text-decoration: none;
+    color: #222;
+}
+#box1{
+    width:100%;
+    background:#19f ;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+#box1.mg{
+    background: #fff;
+}
+#box1 .img{
+    width:40vw;
+    margin:0 auto;
+}
+#box1.mg .img{
+    width:50vw;
+    margin:10vw auto;
+}
+#box1 .chk{
+    width:50vw;
+    height:10vw;
+    text-align: center;
+    line-height: 10vw;
+    border-radius: 4.4rem;
+    background: #1987f7;
+    margin: 0 auto;
+    color: #d3e8fd;
+    font-size: 2.8rem;
+    margin:6.6rem auto 2rem;
+}
+#box1 .chk2{
+    background: #62b0ff;
+    border:2px solid #81bfff;
+}
+#box1 p{
+    font-size:2.2rem;
+    color: #8fccff;
+    text-align: center;
+}
+#box2 div{
+    height: 10rem;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+    line-height: 10rem;
+    font-size: 2rem;
+    color: #222;
+    font-weight: 600;
+    vertical-align: center;
+    position:relative;
+}
+#box2 div img{
+    position: absolute;
+    top:50%;
+    left: 5vw;
+    margin-top: -1.6rem;
+}
+#box2 div p{
+    margin-left: 10vw;
+}
+#box2 .bag a{
+    float: right;
+    width:6.8rem;
+    height:2.8rem;
+    border: 1px solid #ef4e4e;
+    border-radius: 1.4rem;
+    font-size: 1.8rem;
+    color: #ef4e4e;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.8rem;
+    margin-top: -1.4rem;
+    position: absolute;
+    top:50%;
+    right: 5vw;
+}
+#box2 .bag span{
+    position: absolute;
+    top:0;
+    right: 2vw;
+}
+#box2 .wifi .yj{
+    width:3rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background: #8fccff;
+    margin-top: -0.5rem;
+    position: absolute;
+    top:50%;
+    right: 5vw;
+}
+#box2 .wifi .yj1{
+    background: #ccc;
+}
+
+#box2 .wifi .yy{
+    width:2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background: #19f;
+    margin-top: -1rem;
+    position: absolute;
+    top:50%;
+    right: 4vw;
+}
+#box2 .wifi .yy1{
+     right: 7vw;
+     background: #eee;
+ }
+/*下载*/
+.jd{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #858585;
+    margin-top: 2rem;
+}
+.jd span{
+    font-size: 4.4rem;
+    color: #222;
+}
+.jdt{
+    width:80vw;
+    height:3vw;
+    background: #ecf0f3;
+    border-radius: 3vw;
+    margin: 4rem auto;
+}
+.jdt p{
+    width:34%;
+    height:3vw;
+    background: #7ed321;
+    border-radius: 3vw;
+    float: left;
+}
