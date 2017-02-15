@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1，maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>检查更新</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -11,12 +11,12 @@
     <nav><span class="tip">&lt;</span>号码识别设置 <span class="txt"><a href="#">帮助</a></span></nav>
     <section id="box1">
         <div class="img"><img src="images/bg_dagou@2x.png"  width="100%" height="100%" alt=""></div>
-        <div class="chk chk2">检查更新</div>
+        <div class="chk chk2" ><a href="#">检查更新</a></div>
         <p>上次更新日期 2009-12-12</p>
     </section>
     <section id="box2">
         <div class="bag"><img src="images/iocn_wenjianbao@2x.png"><p>号码扩展包</p> <a href="#">NEW</a><span>&gt;</span></div>
-        <div class="wifi"><img src="images/iocn_wi-fi@2x.png" alt=""><p>wi-fi下自动更新</p> <span class="yj yj1"></span> <span class="yy yy1"></span></div>
+        <div class="wifi"><img src="images/iocn_wi-fi@2x.png" alt=""><p>wi-fi下自动更新</p> <span class="yj yj1"><span class="yy yy1"></span></span> </div>
     </section>
 
     <script>
@@ -25,9 +25,11 @@
             $('#box2 .wifi .yy').click(function () {
                 i++;
                 if(i%2!==0){
-                    $(this).css({background:'#eee',right:'7vw'}).prev().css('background','#ccc');
+                    $(this).css({background:'#eee',float:'left'}).parent().css('background','#ccc');
+                    $('.chk2 a').attr('href','#')
                 }else{
-                    $(this).css({background:'#19f',right:'4vw'}).prev().css('background','#8fccff');
+                    $(this).css({background:'#19f',float:'right'}).parent().css('background','#8fccff');
+                    $('.chk2 a').attr('href','index.html')
 
                 }
 

@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>自动下载</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1，maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
     <nav><span class="tip">&lt;</span>号码识别设置 </nav>
     <section id="box1" class="mg">
         <div class="img"><img src="images/bg_gengxin@2x.png"  width="100%" height="100%" alt=""></div>
     </section>
-    <p class="jd"><span>34%</span><br>正在下载号码识别包...</p>
+    <p class="jd"></p>
+    <!--<span>0%</span><br>正在下载号码识别包...-->
     <div class="jdt"><p></p></div>
+    <div class="down">点击下载</div>
+
+    <script>
+        $(function(){
+            var i=0;
+            $('.down').click(function ks(){
+                $('.jd').html('<span></span><br>正在下载号码识别包...');
+                $('.jd').find('span').html(i+'%');
+                $('.jdt p').css('width',i+'%');
+                i++;
+                var timer =setTimeout(ks,30);
+                if(i>100){
+                    clearTimeout(timer);
+                    $('.jd').html('<span>100%</span><br>下载完成');
+                    setTimeout(function(){window.open('cy.html')},3000);
+
+                }
+            });
+
+        })
+    </script>
 </body>
 </html>

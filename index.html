@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1，maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>号码百事通</title>
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
     </section>
     <section id="box2">
         <div class="bag"><img src="images/iocn_wenjianbao@2x.png"><p>号码扩展包</p> <a href="#">NEW</a><span>&gt;</span></div>
-        <div class="wifi"><img src="images/iocn_wi-fi@2x.png" alt=""><p>wi-fi下自动更新</p> <span class="yj"></span> <span class="yy"></span></div>
+        <div class="wifi"><img src="images/iocn_wi-fi@2x.png" alt=""><p>wi-fi下自动更新</p> <span class="yj"><span class="yy"></span></span> </div>
     </section>
     <script>
         $(function(){
@@ -24,10 +24,10 @@
             $('#box2 .wifi .yy').click(function () {
                     i++;
                     if(i%2!==0){
-                        $(this).css({background:'#19f',right:'4vw'}).prev().css('background','#8fccff');
+                        $(this).css({background:'#19f',float:'right'}).parent().css('background','#8fccff');
                     }else{
 
-                        $(this).css({background:'#eee',right:'7vw'}).prev().css('background','#ccc');
+                        $(this).css({background:'#eee',float:'left'}).parent().css('background','#ccc');
                     }
 
             })
