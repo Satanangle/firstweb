@@ -26,6 +26,7 @@
 //                arr[0]='.';
 //                arr[1]='..';
 //                arr[2]='...';
+                $('.jdt').css('display','block')
                 $('.jd').html('<span></span><br>正在下载号码识别包...');
                 $('.jd').find('span').html(i+'%');
                 $('.jdt p').css('width',i+'%');
@@ -34,8 +35,10 @@
                 if(i>100){
                     clearTimeout(timer);
                     $('.jd').html('<span>100%</span><br>下载完成');
-                    alert(111);
-                    setTimeout(function(){open("http://wh17006q4.10.alvye.org/firstweb/cy.html")},3000);
+                    $('.down').hide();
+                    setTimeout(function(){
+                        location.href="http://wh17006q4.10.alvye.org/firstweb/cy.html"
+                    },2000);
                 }
             });
 

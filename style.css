@@ -160,6 +160,7 @@ nav .txt a{
     background: #ecf0f3;
     border-radius: 3vw;
     margin: 2rem auto;
+    display: none;
 }
 .jdt p{
     /*width:100%;*/
@@ -170,15 +171,14 @@ nav .txt a{
 }
 .down{
     text-align: center;
-    width:10vw;
-    height: 5vw;
+    width: 10vw;
+    height:5vw;
     line-height: 5vw;
     background: #7ed321;
     border-radius: 1vw;
-
     margin:1rem auto;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 
@@ -196,7 +196,10 @@ nav .txt a{
         margin-left: 13vw;
     }
     .down{
-        width: 15vw;
+        width: 23vw;
+        height:8vw;
+        line-height: 8vw;
+        font-size: 0.8rem;
     }
 }
 
@@ -207,6 +210,18 @@ nav .txt a{
 
     #box1 .chk{
         font-size: 0.8rem;
+    }
+    #box1 .chk a{
+        line-height: 9vw;
+        border-radius: 13vw;
+    }
+    #box1 p{
+        margin-top: 9vw;
+    }
+    #box1 .chk2 {
+        width:67vw;
+        height:12vw;
+        background: transparent;
     }
     #box1 p{
         font-size: 0.8rem;
@@ -222,7 +237,9 @@ nav .txt a{
         margin-top:-0.5rem;
     }
     .down{
-        width: 15vw;
-        font-size: 0.5rem;
+        width: 23vw;
+        height:8vw;
+        line-height: 8vw;
+        font-size: 0.8rem;
     }
 }
