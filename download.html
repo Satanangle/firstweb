@@ -20,17 +20,22 @@
     <script>
         $(function(){
             var i=0;
+            var j=0;
             $('.down').click(function ks(){
+//                var arr=new Array;
+//                arr[0]='.';
+//                arr[1]='..';
+//                arr[2]='...';
                 $('.jd').html('<span></span><br>正在下载号码识别包...');
                 $('.jd').find('span').html(i+'%');
                 $('.jdt p').css('width',i+'%');
                 i++;
-                var timer =setTimeout(ks,30);
+                var timer =setTimeout(ks,60);
                 if(i>100){
                     clearTimeout(timer);
                     $('.jd').html('<span>100%</span><br>下载完成');
-                    setTimeout(function(){window.open('cy.html')},3000);
-
+                    alert(111);
+                    setTimeout(function(){open("http://wh17006q4.10.alvye.org/firstweb/cy.html")},3000);
                 }
             });
 
